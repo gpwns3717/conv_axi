@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jun 23 22:12:25 2021
+# Process ID: 19206
+# Current directory: /home/ubuntu/projects/verilog/conv_simple/conv_project/conv_project.runs/synth_1
+# Command line: vivado -log conv_simple.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source conv_simple.tcl
+# Log file: /home/ubuntu/projects/verilog/conv_simple/conv_project/conv_project.runs/synth_1/conv_simple.vds
+# Journal file: /home/ubuntu/projects/verilog/conv_simple/conv_project/conv_project.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source conv_simple.tcl -notrace

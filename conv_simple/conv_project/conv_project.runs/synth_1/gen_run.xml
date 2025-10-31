@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1624453941">
+  <File Type="REPORTS-TCL" Name="conv_simple_reports.tcl"/>
+  <File Type="PA-TCL" Name="conv_simple.tcl"/>
+  <File Type="RDS-DCP" Name="conv_simple.dcp"/>
+  <File Type="RDS-RDS" Name="conv_simple.vds"/>
+  <File Type="RDS-UTIL" Name="conv_simple_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="conv_simple_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/conv_simple/control_unit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../control_unit.v"/>
+        <Attr Name="ImportTime" Val="1624388860"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/conv_simple/conv_single_row.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../conv_single_row.v"/>
+        <Attr Name="ImportTime" Val="1624389556"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/conv_simple/data_preprocessing.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../data_preprocessing.v"/>
+        <Attr Name="ImportTime" Val="1624389651"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/conv_simple/delay.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../delay.v"/>
+        <Attr Name="ImportTime" Val="1624333231"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/conv_simple/processing_element.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../processing_element.v"/>
+        <Attr Name="ImportTime" Val="1624387210"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/conv_simple/saturation.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../saturation.v"/>
+        <Attr Name="ImportTime" Val="1624427280"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/conv_simple/conv_simple.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../conv_simple.v"/>
+        <Attr Name="ImportTime" Val="1624451324"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="conv_simple"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,13 @@
+0.7
+2020.2
+Nov 18 2020
+09:20:35
+/home/ubuntu/projects/verilog/conv_simple/conv_project/conv_project.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+/home/ubuntu/projects/verilog/conv_simple/conv_project/conv_project.srcs/sim_1/imports/conv_simple/tb_conv_simple.v,1624389618,verilog,,,,tb_conv_simple,,,,,,,,
+/home/ubuntu/projects/verilog/conv_simple/conv_project/conv_project.srcs/sources_1/imports/conv_simple/control_unit.v,1624388860,verilog,,/home/ubuntu/projects/verilog/conv_simple/conv_project/conv_project.srcs/sources_1/imports/conv_simple/conv_simple.v,,control_unit,,,,,,,,
+/home/ubuntu/projects/verilog/conv_simple/conv_project/conv_project.srcs/sources_1/imports/conv_simple/conv_simple.v,1624451324,verilog,,/home/ubuntu/projects/verilog/conv_simple/conv_project/conv_project.srcs/sources_1/imports/conv_simple/conv_single_row.v,,conv_simple,,,,,,,,
+/home/ubuntu/projects/verilog/conv_simple/conv_project/conv_project.srcs/sources_1/imports/conv_simple/conv_single_row.v,1624389556,verilog,,/home/ubuntu/projects/verilog/conv_simple/conv_project/conv_project.srcs/sources_1/imports/conv_simple/data_preprocessing.v,,conv_single_row,,,,,,,,
+/home/ubuntu/projects/verilog/conv_simple/conv_project/conv_project.srcs/sources_1/imports/conv_simple/data_preprocessing.v,1624389651,verilog,,/home/ubuntu/projects/verilog/conv_simple/conv_project/conv_project.srcs/sources_1/imports/conv_simple/delay.v,,data_preprocessing,,,,,,,,
+/home/ubuntu/projects/verilog/conv_simple/conv_project/conv_project.srcs/sources_1/imports/conv_simple/delay.v,1624333231,verilog,,/home/ubuntu/projects/verilog/conv_simple/conv_project/conv_project.srcs/sources_1/imports/conv_simple/processing_element.v,,delay,,,,,,,,
+/home/ubuntu/projects/verilog/conv_simple/conv_project/conv_project.srcs/sources_1/imports/conv_simple/processing_element.v,1624387210,verilog,,/home/ubuntu/projects/verilog/conv_simple/conv_project/conv_project.srcs/sources_1/imports/conv_simple/saturation.v,,processing_element,,,,,,,,
+/home/ubuntu/projects/verilog/conv_simple/conv_project/conv_project.srcs/sources_1/imports/conv_simple/saturation.v,1624427280,verilog,,/home/ubuntu/projects/verilog/conv_simple/conv_project/conv_project.srcs/sim_1/imports/conv_simple/tb_conv_simple.v,,saturation,,,,,,,,

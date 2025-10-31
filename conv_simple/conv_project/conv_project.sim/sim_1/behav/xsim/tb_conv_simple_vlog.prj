@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../conv_project.srcs/sources_1/imports/conv_simple/control_unit.v" \
+"../../../../conv_project.srcs/sources_1/imports/conv_simple/conv_simple.v" \
+"../../../../conv_project.srcs/sources_1/imports/conv_simple/conv_single_row.v" \
+"../../../../conv_project.srcs/sources_1/imports/conv_simple/data_preprocessing.v" \
+"../../../../conv_project.srcs/sources_1/imports/conv_simple/delay.v" \
+"../../../../conv_project.srcs/sources_1/imports/conv_simple/processing_element.v" \
+"../../../../conv_project.srcs/sources_1/imports/conv_simple/saturation.v" \
+"../../../../conv_project.srcs/sim_1/imports/conv_simple/tb_conv_simple.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

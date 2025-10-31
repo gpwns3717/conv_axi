@@ -1,0 +1,11 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /home/ubuntu/tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto b7ea1ee35cb846729c0a14cb8eda77e6 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_conv_simple_behav xil_defaultlib.tb_conv_simple xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 21 differs from formal bit length 17 for port 'o_psum' [/home/ubuntu/projects/verilog/conv_simple/conv_project/conv_project.srcs/sources_1/imports/conv_simple/conv_single_row.v:48]
+WARNING: [VRFC 10-3091] actual bit length 21 differs from formal bit length 17 for port 'i_psum' [/home/ubuntu/projects/verilog/conv_simple/conv_project/conv_project.srcs/sources_1/imports/conv_simple/conv_single_row.v:67]
+WARNING: [VRFC 10-3091] actual bit length 21 differs from formal bit length 18 for port 'o_psum' [/home/ubuntu/projects/verilog/conv_simple/conv_project/conv_project.srcs/sources_1/imports/conv_simple/conv_single_row.v:70]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
