@@ -1,5 +1,3 @@
-`timescale 1ns / 10ps
-
 module saturation #(
     parameter integer I_SUM_BW = 21,
     parameter integer O_SUM_BW = 16

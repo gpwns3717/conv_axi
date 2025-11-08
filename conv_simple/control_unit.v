@@ -17,14 +17,14 @@ module control_unit #(
 
   always @(*) begin
     if (valid) begin
-      o_valid <= 1'b0;
+      o_valid = 1'b0;
       if ((i + KERNEL_SIZE - 1 < DATA_SIZE) && (j + KERNEL_SIZE - 1 < DATA_SIZE)) begin
         if (i % STRIDE == 0 && j % STRIDE == 0) begin
-          o_valid <= 1'b1;
+          o_valid = 1'b1;
         end
       end
     end else begin
-      o_valid <= 1'b0;
+      o_valid = 1'b0;
     end
   end
 

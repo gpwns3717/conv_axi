@@ -1,5 +1,3 @@
-`timescale 1ns / 10ps
-
 module data_preprocessing #(
     parameter integer DATA_BW = 8
 ) (

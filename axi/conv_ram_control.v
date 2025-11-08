@@ -208,13 +208,13 @@ module conv_ram_control #(
 
   always @(*) begin
     if (i_valid) begin
-      o_w_en   <= 1'b1;
-      o_w_addr <= c_w_yaddr;
-      o_w_data <= i_y;
+      o_w_en   = 1'b1;
+      o_w_addr = c_w_yaddr;
+      o_w_data = i_y;
     end else begin
-      o_w_en   <= 1'b0;
-      o_w_addr <= c_w_yaddr;
-      o_w_data <= 0;
+      o_w_en   = 1'b0;
+      o_w_addr = c_w_yaddr;
+      o_w_data = 0;
     end
   end
 

@@ -1,5 +1,3 @@
-`timescale 1ns / 10ps
-
 module processing_element #(
     parameter integer WEIGHT_BW    = 8,
     parameter integer DATA_BW      = 8,

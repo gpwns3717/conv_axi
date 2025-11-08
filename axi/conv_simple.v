@@ -1,4 +1,7 @@
-`timescale 1ns / 10ps
+`include "./control_unit.v"
+`include "./data_preprocessing.v"
+`include "./conv_single_row.v"
+`include "./delay.v"
 
 module conv_simple #(
     parameter integer KERNEL_SIZE = 5,
@@ -139,6 +142,7 @@ module conv_simple #(
   ) CONTROL (
       .clk    (clk),
       .rst_n  (rst_n),
+      .i_w_en (i_w_en),
       .i_valid(i_valid),
       .o_valid(w_valid)
   );

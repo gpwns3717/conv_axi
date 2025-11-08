@@ -1,5 +1,3 @@
-`timescale 1ns / 10ps
-
 module control_unit #(
     parameter integer DATA_SIZE   = 32,
     parameter integer KERNEL_SIZE = 5,
@@ -8,6 +6,7 @@ module control_unit #(
 ) (
     input  wire clk,
     input  wire rst_n,
+    input  wire i_w_en,
     input  wire i_valid,
     output reg  o_valid
 );
@@ -17,24 +16,24 @@ module control_unit #(
 
   always @(*) begin
     if (valid) begin
-      o_valid <= 1'b0;
+      o_valid = 1'b0;
       if ((i + KERNEL_SIZE - 1 < DATA_SIZE) && (j + KERNEL_SIZE - 1 < DATA_SIZE)) begin
         if (i % STRIDE == 0 && j % STRIDE == 0) begin
-          o_valid <= 1'b1;
+          o_valid = 1'b1;
         end
       end
     end else begin
-      o_valid <= 1'b0;
+      o_valid = 1'b0;
     end
   end
 
   always @(posedge clk or negedge rst_n) begin
     if (!rst_n) begin
-      valid <= 0;
-    end else if (i_valid) begin
-      valid <= i_valid;
-    end else if (o_valid) begin
-      valid <= 0;
+      valid <= 1'b0;
+    end else if (i_valid && !i_w_en) begin
+      valid <= 1'b1;
+    end else begin
+      valid <= 1'b0;
     end
   end
 

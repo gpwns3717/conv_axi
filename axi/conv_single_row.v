@@ -1,4 +1,5 @@
-`timescale 1ns / 10ps
+`include "./processing_element.v"
+`include "./saturation.v"
 
 module conv_single_row #(
     parameter integer KERNEL_SIZE = 5,

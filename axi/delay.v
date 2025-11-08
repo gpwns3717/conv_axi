@@ -1,5 +1,3 @@
-`timescale 1ns / 10ps
-
 module delay #(
     parameter integer DELAY_NB = 27,
     parameter integer SUM_BW   = 16

@@ -218,23 +218,23 @@ module axi_slave #(
     case (c_wstate)
       W_DATA: begin
         if (WVALID && WREADY) begin
-          o_w_en   <= 1'b1;
-          o_w_addr <= n_awaddr;
-          o_w_data <= WDATA;
-          o_w_strb <= WSTRB;
+          o_w_en   = 1'b1;
+          o_w_addr = n_awaddr;
+          o_w_data = WDATA;
+          o_w_strb = WSTRB;
         end else begin
-          o_w_en   <= 1'b0;
-          o_w_addr <= 0;
-          o_w_data <= 0;
-          o_w_strb <= 0;
+          o_w_en   = 1'b0;
+          o_w_addr = 0;
+          o_w_data = 0;
+          o_w_strb = 0;
         end
       end
 
       default: begin
-        o_w_en   <= 1'b0;
-        o_w_addr <= 0;
-        o_w_data <= 0;
-        o_w_strb <= 0;
+        o_w_en   = 1'b0;
+        o_w_addr = 0;
+        o_w_data = 0;
+        o_w_strb = 0;
       end
     endcase
   end
@@ -380,31 +380,31 @@ module axi_slave #(
     case (c_rstate)
       R_IDLE: begin
         if (ARADDR && ARVALID) begin
-          o_r_addr <= ARADDR;
-          o_r_en   <= 1'b1;
+          o_r_addr = ARADDR;
+          o_r_en   = 1'b1;
         end else begin
-          o_r_addr <= 0;
-          o_r_en   <= 1'b1;
+          o_r_addr = 0;
+          o_r_en   = 1'b1;
         end
       end
       R_ACCESS: begin
-        o_r_addr <= n_araddr;
-        o_r_en   <= 1'b1;
+        o_r_addr = n_araddr;
+        o_r_en   = 1'b1;
       end
 
       R_DATA: begin
         if (RVALID && RREADY) begin
-          o_r_en   <= 1'b1;
-          o_r_addr <= n_araddr;
+          o_r_en   = 1'b1;
+          o_r_addr = n_araddr;
         end else begin
-          o_r_en   <= 1'b0;
-          o_r_addr <= 0;
+          o_r_en   = 1'b0;
+          o_r_addr = 0;
         end
       end
 
       default: begin
-        o_r_en   <= 1'b0;
-        o_r_addr <= 0;
+        o_r_en   = 1'b0;
+        o_r_addr = 0;
       end
     endcase
   end

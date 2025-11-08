@@ -5,16 +5,19 @@ file=${base##*/}
 
 xvlog ./*.v
 
-if [ -z ${file} ]; then
-  exit 0
+if [ -z ${file} ]
+then
+    exit 0;
 fi
 
 xelab $file -debug wave -s $file
 
-if [ $# -le 0 ]; then
-  xsim $file -gui -wdb simulate_xsim_${file}.wdb
-elif [ $1 == '-c' ]; then
-  xsim $file -R
+if [ $# -le  0 ]
+then
+    xsim $file -gui -wdb simulate_xsim_${file}.wdb
+elif [ $1 == '-c' ]
+then
+    xsim $file -R
 else
-  xsim $file -gui -wdb simulate_xsim_${file}.wdb
+    xsim $file -gui -wdb simulate_xsim_${file}.wdb
 fi
